@@ -1,19 +1,10 @@
-import Scanner from './Scanner'
+
+import parseTemplateToTokens from './Parser'
 
 window.MyMustache = {
   render(templateStr, data) {
     console.info(templateStr)
-    let scanner = new Scanner(templateStr)
-    // let words = scanner.scanUntil('{{')
-    // 交替执行
-    let word
-    while (!scanner.eos()) {
-      word = scanner.scanUntil('{{')
-      console.log(word)
-      scanner.scan('{{')
-      word = scanner.scanUntil('}}')
-      console.log(word)
-      scanner.scan('}}')
-    }
+    let tokens = parseTemplateToTokens(templateStr)
+    console.log(tokens)
   }
 }
