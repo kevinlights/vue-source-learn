@@ -1,0 +1,21 @@
+<ul id="list">
+
+</ul>
+
+<script>
+  var arr = [
+    {"name": "a", "age": 12, "sex": "male"},
+    {"name": "b", "age": 13, "sex": "female"},
+    {"name": "c", "age": 14, "sex": "male"},
+  ];
+  var list = document.getElementById("list");
+  for (var i = 0; i < arr.length; i++) {
+    let oLi = document.createElement('li');
+    let hdDiv = document.createElement('div')
+    hdDiv.className = 'hd';
+    hdDiv.innerText = arr[i].name;
+    // oLi.innerText = arr[i].name;
+    oLi.appendChild(hdDiv)
+    list.appendChild(oLi);
+  }
+</script>

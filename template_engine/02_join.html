@@ -1,0 +1,42 @@
+<!-- <li>
+  <div class="hd"></div>
+  <div class="bd">
+    <p>name: </p>
+    <p>age: </p>
+    <p>sex: </p>
+  </div>
+</li> -->
+<ul id="list"></ul>
+<script>
+  var arr = [
+    { "name": "Kevin", "age": 12, "sex": "male" },
+    { "name": "Lisa", "age": 13, "sex": "female" },
+    { "name": "Johns", "age": 14, "sex": "male" },
+  ];
+  var str = [
+    '<li>',
+    '  <div class="hd"></div>',
+    '  <div class="bd">',
+    '    <p>name: </p>',
+    '    <p>age: </p>',
+    '    <p>sex: </p>',
+    '  </div>',
+    '</li>'
+  ].join('');
+  console.log(str);
+
+  var list = document.getElementById("list");
+
+  for (let i = 0; i < arr.length; i++) {
+    list.innerHTML += [
+      '<li>',
+      '  <div class="hd">' + arr[i].name + '</div>',
+      '  <div class="bd">',
+      '    <p>name: ' + arr[i].name + '</p>',
+      '    <p>age: ' + arr[i].age + '</p>',
+      '    <p>sex: ' + arr[i].sex + '</p>',
+      '  </div>',
+      '</li>'
+    ].join('');
+  }
+</script>
