@@ -4,7 +4,11 @@
     <title>MyMustache</title>
   </head>
 <body>
-  <h1>Running.</h1>
   <script src="/xuni/bundle.js"></script>
+  <script>
+    var templateStr = 'Hello {{username}}, age {{age}}, done.';
+    var data = {};
+    MyMustache.render(templateStr, data);
+  </script>
 </body>
 </html>
