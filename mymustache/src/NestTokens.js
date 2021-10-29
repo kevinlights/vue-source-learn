@@ -40,13 +40,16 @@ export default function nextTokens(tokens) {
           sections[sections.length - 1][2] : nestedTokens
         break
       default:
-        // 判断当前栈中是否为空
-        if (sections.length == 0) {
-          nestedTokens.push(token)
-        } else {
-          // 如果不为空，则加入结果数组
-          sections[sections.length - 1][2].push(token)
-        }
+        // // 判断当前栈中是否为空
+        // if (sections.length == 0) {
+        //   nestedTokens.push(token)
+        // } else {
+        //   // 如果不为空，则加入结果数组
+        //   sections[sections.length - 1][2].push(token)
+        // }
+
+        // 不管当前的 collector 是谁，推入 collector 即可
+        collector.push(token)
     }
   }
   return nestedTokens
