@@ -1,0 +1,22 @@
+<script src="./lib/mustache.js"></script>
+
+
+<div id="container"></div>
+
+<script>
+  // console.log(Mustache)
+  var templateStr = `
+    <ul>
+      {{#arr}}
+      <li>{{.}}</li>
+      {{/arr}}
+    </ul>
+    `;
+  var data = {
+    arr: ['apple', 'hi']
+  };
+  var domStr = Mustache.render(templateStr, data);
+  // console.info(domStr);
+  var container = document.getElementById('container');
+  container.innerHTML = domStr;
+</script>

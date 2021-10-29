@@ -1,0 +1,22 @@
+<script src="./lib/mustache.js"></script>
+
+
+<div id="container"></div>
+
+<script type="text/template123132" id="mytemplate">
+  {{#b}}
+    <p>Hello{{1+1}}</p>
+  {{/b}}
+</script>
+
+<script>
+  // console.log(Mustache)
+  var templateStr = document.getElementById('mytemplate').innerHTML;
+  var data = {
+    b: true
+  };
+  var domStr = Mustache.render(templateStr, data);
+  // console.info(domStr);
+  var container = document.getElementById('container');
+  container.innerHTML = domStr;
+</script>

@@ -1,0 +1,33 @@
+<script src="./lib/mustache.js"></script>
+
+
+<div id="container"></div>
+
+<script>
+  // console.log(Mustache)
+  var templateStr = `
+  <ul>
+    {{#arr}}
+      <li>
+        <div class="hd">{{name}}</div>
+        <div class="bd">
+          <p>name: {{name}}</p>  
+          <p>name: {{age}}</p>  
+          <p>name: {{sex}}</p>  
+        </div>
+      </li>
+    {{/arr}}
+    </ul>
+    `;
+  var data = {
+    arr: [
+      { "name": "Kevin", "age": 12, "sex": "male" },
+      { "name": "Lisa", "age": 13, "sex": "female" },
+      { "name": "Johns", "age": 14, "sex": "male" },
+    ]
+  };
+  var domStr = Mustache.render(templateStr, data);
+  // console.info(domStr);
+  var container = document.getElementById('container');
+  container.innerHTML = domStr;
+</script>
