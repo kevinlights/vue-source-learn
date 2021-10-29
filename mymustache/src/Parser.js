@@ -1,4 +1,5 @@
 import Scanner from './Scanner'
+import nestTokens from './NestTokens'
 
 /**
  * 将模板字符串处理成 tokens 数组
@@ -30,5 +31,5 @@ export default function parseTemplateToTokens(templateStr) {
     }
     scanner.scan('}}')
   }
-  return tokens
+  return nestTokens(tokens)
 }
