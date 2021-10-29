@@ -1,0 +1,25 @@
+<script>
+  var templateStr = '<h1>Hello {{name}}, age: {{age}}</h1>';
+
+  var data = {
+    name: 'Kevin',
+    age: 11,
+  };
+
+  // console.info('loggGgg'.replace(/g/ig, 'p'));
+  // console.info('loggGgg'.replace(/g/ig, function(a, b, c) {
+  //   console.info(a, b, c)
+  //   return 'u'
+  // }));
+
+  // console.info(templateStr.replace(/\{\{(\w+)\}\}/ig, function(a, b, c, d) {
+  //   console.info(a, b, c, d)
+  //   return 'u'
+  // }));
+
+  console.info(templateStr.replace(/\{\{(\w+)\}\}/ig, function(findStr, $1) {
+    console.info(findStr, $1)
+    return data[$1]
+  }));
+
+</script>

@@ -251,8 +251,9 @@
 
     if (openSection)
       throw new Error('Unclosed section "' + openSection[1] + '" at ' + scanner.pos);
-
-    return nestTokens(squashTokens(tokens));
+    var tokens = nestTokens(squashTokens(tokens));
+    console.info('tokens', tokens);
+    return tokens;
   }
 
   /**

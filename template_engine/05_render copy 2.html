@@ -1,0 +1,17 @@
+<script>
+  var templateStr = '<h1>Hello {{name}}, age: {{age}}</h1>';
+
+  var data = {
+    name: 'Kevin',
+    age: 23,
+  };
+
+  function render(templateStr, data) {
+    return templateStr.replace(/\{\{(\w+)\}\}/ig, function(findStr, $1) {
+      console.info(findStr, $1)
+      return data[$1]
+    })
+  }
+  var result = render(templateStr, data);
+  console.info(result);
+</script>

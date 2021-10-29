@@ -1,0 +1,36 @@
+<script src="./lib/mustache.js"></script>
+
+<div id="container"></div>
+
+<script>
+  var templateStr = `
+  <ul>
+    {{#arr}}
+      <li>
+        <div class="hd">{{name}}</div>
+        <div class="bd">
+          <p>name: {{name}}</p>  
+          <p>name: {{age}}</p>  
+          <p>name: {{sex}}</p> 
+          <ol>
+            {{#hobbies}}
+              <li>{{.}}</li>
+            {{/hobbies}}
+          </ol>
+        </div>
+      </li>
+    {{/arr}}
+    </ul>
+    `;
+  var data = {
+    arr: [
+      { "name": "Kevin", "age": 12, "sex": "male", "hobbies": ["swimming"] },
+      { "name": "Lisa", "age": 13, "sex": "female", "hobbies": ["swimming"] },
+      { "name": "Johns", "age": 14, "sex": "male", "hobbies": ["swimming"] },
+    ]
+  };
+  var domStr = Mustache.render(templateStr, data);
+  // console.info(domStr);
+  var container = document.getElementById('container');
+  container.innerHTML = domStr;
+</script>
