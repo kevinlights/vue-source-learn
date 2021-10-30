@@ -4,6 +4,7 @@
  * 将 # 与 / 之间有 tokens 整合起来，作为下标为 3 的数组
  */
 export default function nextTokens(tokens) {
+  console.log(tokens);
   let nestedTokens = []
 
   // 使用 栈 来保存 tokens
@@ -11,9 +12,9 @@ export default function nextTokens(tokens) {
   // 一直指向 nestedTokens 结果数组，
   // 入栈时 向下层移动，出栈时，向上层移动
   let collector = nestedTokens
-
+  let token, section
   for (let i = 0; i < tokens.length; i++) {
-    let token = tokens[i]
+    token = tokens[i]
     switch (token[0]) {
       case '#':
         // // 遇到 # 则入栈
@@ -31,7 +32,7 @@ export default function nextTokens(tokens) {
         break
       case '/':
         // 遇到 / 则出栈
-        let section = sections.pop()
+        section = sections.pop()
         // console.log(section[1] + ' popped')
         // 把弹出来的项加入结果
         // nestedTokens.push(section)
