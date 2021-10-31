@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MyMustache</title>
-  </head>
+
+<head>
+  <title>MyMustache</title>
+</head>
+
 <body>
+  <div id="container"></div>
   <script src="/xuni/bundle.js"></script>
   <script>
-    var templateStr = 'Hello {{username}}, age {{age}}, done.';
+    var templateStr = 'Hello {{username}}, age {{age}}, {{a.b.c}}, done.';
     var templateStr2 = `<ul>
     {{#arr}}
       <li>
@@ -25,8 +28,42 @@
     {{/arr}}
     </ul>
     `;
-    var data = {};
-    MyMustache.render(templateStr2, data);
+    var templateStr3 = `
+    <ul>
+    {{#arr}}
+      <li>
+        <div class="hd">{{name}}</div>
+        <div class="bd">
+          <p>name: {{name}}</p>  
+          <p>name: {{age}}</p>  
+          <p>name: {{sex}}</p> 
+        </div>
+      </li>
+    {{/arr}}
+    </ul>
+    `;
+    var data = {
+      username: 'Kevin',
+      age: 22,
+      a: {
+        b: {
+          c: 100
+        }
+      }
+    };
+    var data2 = {
+      arr: [
+        { "name": "Kevin", "age": 12, "sex": "male", "hobbies": ["coding", "game"] },
+        { "name": "Lisa", "age": 13, "sex": "female", "hobbies": ["singing", "reading"] },
+        { "name": "Johns", "age": 14, "sex": "male", "hobbies": ["swimming"] },
+      ]
+    };
+    // MyMustache.render(templateStr, data);
+    // MyMustache.render(templateStr3, data2);
+    var domStr = MyMustache.render(templateStr2, data2);
+    console.info(domStr);
+    document.getElementById("container").innerHTML = domStr;
   </script>
 </body>
+
 </html>

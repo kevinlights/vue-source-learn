@@ -1,10 +1,11 @@
 
 import parseTemplateToTokens from './Parser'
+import renderTemplate from './Render'
 
 window.MyMustache = {
   render(templateStr, data) {
-    console.info(templateStr)
     let tokens = parseTemplateToTokens(templateStr)
-    console.log(tokens)
+    let domStr = renderTemplate(tokens, data)
+    return domStr
   }
 }
