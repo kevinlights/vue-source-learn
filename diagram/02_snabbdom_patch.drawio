@@ -1,0 +1,123 @@
+<mxfile host="65bd71144e">
+    <diagram id="Y7nVa44Pco2wxkuUL4pY" name="Summary">
+        <mxGraphModel dx="610" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="2" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="patch" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="40" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="3" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="3" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="340" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="8" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2909" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="oldVnode&amp;nbsp;是虚拟节点？" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="255" y="180" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="5" target="10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="是&amp;nbsp;DOM&amp;nbsp;类型，包装成 Vnode" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="190" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="10" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="不是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="10" target="17" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="oldNode&amp;nbsp;和&amp;nbsp; newNode&amp;nbsp;是否相同" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="242.5" y="370" width="195" height="91.76" as="geometry"/>
+                </mxCell>
+                <UserObject label="精细化比较" link="data:page/id,7hi757GMdr9JFW42nv93" id="15">
+                    <mxCell style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                        <mxGeometry x="280" y="557.64" width="120" height="60" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="17" value="删除旧的，插入新的" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="555" y="385.88" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="7hi757GMdr9JFW42nv93" name="MinusPatch">
+        <mxGraphModel dx="610" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-0"/>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-1" parent="Od4uKZJ-L-5rVwQ23xVW-0"/>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-2" target="Od4uKZJ-L-5rVwQ23xVW-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-2" value="Minus Patch" style="whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="130" y="30" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-6" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-3" target="Od4uKZJ-L-5rVwQ23xVW-5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-8" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-3" target="Od4uKZJ-L-5rVwQ23xVW-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-3" value="oldVnode&amp;nbsp;和 newVnode&amp;nbsp;是否是内存中的同一个对象" style="rhombus;whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="90" y="170" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-5" value="不需要比较" style="whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="400" y="180" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-10" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-7" target="Od4uKZJ-L-5rVwQ23xVW-9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-19" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-7" target="Od4uKZJ-L-5rVwQ23xVW-18" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-7" value="newVnode&amp;nbsp;是否是 text" style="rhombus;whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="96" y="330" width="190" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-15" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-9" target="Od4uKZJ-L-5rVwQ23xVW-5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-17" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-9" target="Od4uKZJ-L-5rVwQ23xVW-16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-9" value="newVnode&amp;nbsp;的 text&amp;nbsp;与 oldVnode&amp;nbsp;的 text&amp;nbsp;是否相同" style="rhombus;whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="380" y="330" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-16" value="将 oldVnode.elm&amp;nbsp;中的 innerText&amp;nbsp;设成 newVnode&amp;nbsp;的 text" style="whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="640" y="340" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-23" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-18" target="Od4uKZJ-L-5rVwQ23xVW-22" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-26" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" source="Od4uKZJ-L-5rVwQ23xVW-18" target="Od4uKZJ-L-5rVwQ23xVW-25" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-18" value="oldVnode&amp;nbsp;有没有子节点" style="rhombus;whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="115.5" y="490" width="151" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-20" value="意味着 newVnode&amp;nbsp;的子节点" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="20" y="440" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-22" value="清空 oldVnode&amp;nbsp;中的 text，并把 newVnode.children&amp;nbsp;插入 dom" style="whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="380" y="500" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-24" value="innterText&amp;nbsp;会将所有 children&amp;nbsp;自动清空，反之则不行" style="shape=note;strokeWidth=2;fontSize=14;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;align=left;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="610" y="190" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Od4uKZJ-L-5rVwQ23xVW-25" value="oldVnode&amp;nbsp;和 newVnode&amp;nbsp;都有子节点的处理" style="whiteSpace=wrap;html=1;" parent="Od4uKZJ-L-5rVwQ23xVW-1" vertex="1">
+                    <mxGeometry x="131" y="660" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
